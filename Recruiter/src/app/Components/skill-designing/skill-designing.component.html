@@ -1,0 +1,77 @@
+<!-- <div class="container bg-light">
+    <div class="body">
+        <div class="form-check mb-5">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <label class="form-check-label" for="exampleRadios1">
+              IT
+            </label>
+            <div class="item-list" >
+            <select class="form-select" class="form-control" required formControlName="managment">
+                <option selected disabled value="">-select-</option>
+                <option>Management</option>
+                <option>Finance</option>
+                <option>HR/Legal</option>
+                <option>Consulting</option>
+                <option>Sales/Marketing</option>
+                <option>Programming</option>
+                <option>Graphic Design</option>
+                <option>CAD/GIS/RS</option>
+                <option>Engineering Tech</option>
+                <option>Testing</option>
+                <option>Network Engg</option>
+                <option>Database</option>
+                <option>CloudTech</option>
+                <option>CAD/GIS/ RemoteSensing</option>
+                <option>Enterprize App</option>
+                <option>DevOps</option>
+                <option>Digital Marketing</option>
+                <option>Digital Transformation</option>
+                <option>AI/ML/Analytics</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-check mb-5">
+            <input class="form-check-input" type="radio" onclick="manageFunction()"  name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+                Film & Modelling
+            </label>
+            <div class="item-list" id="myDIV">
+                <select class="form-select" class="form-control" required formControlName="managment">
+                    <option selected disabled value="">-select-</option>
+                    <option>Modelling</option>
+                    <option>Costume Designer</option>
+                    <option>Choriographer</option>
+                    <option>Direction</option>
+                    <option>Acting</option>
+                    <option>Cameramen</option>
+                  </select>
+                </div>
+          </div>
+          <div class="form-check mb-5">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label" for="exampleRadios3">
+                Pharma & Lifesciences
+            </label>
+            <div class="item-list">
+                <select class="form-select" class="form-control" required formControlName="managment">
+                    <option selected disabled value="">-select-</option>
+                    <option>Research Scientist</option>
+                    <option>Legal/Patents</option>
+                    <option>HR</option>
+                    <option>Marketing</option>
+                    <option>Purchase</option>
+                  </select>
+                </div>
+          </div>
+    </div>
+    </div> -->
+
+    <h1>show hide div on click of radio button in angular - onlinecode</h1>
+
+<input name="type" [(ngModel)]="type" type="radio" [value]="1" [checked]="options"/> Admin
+
+<input name="type" [(ngModel)]="type" type="radio" [value]="0" [checked]="!options"/> User
+
+<h2 *ngIf="type == 1">Admin</h2>
+
+<h2 *ngIf="type == 0">User</h2>

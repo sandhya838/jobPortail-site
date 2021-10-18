@@ -1,0 +1,368 @@
+<div class="container">
+  <form [formGroup]="userForm" (ngSubmit)="onClick(userForm.value, userForm.valid)" novalidate>
+    <h4>IT</h4>
+  <div class="row">
+    <div class="col-3">
+    <label>Management</label>
+    <ng-multiselect-dropdown formControlName="management"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings"
+    [data]="dropdownList"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Programming</label>
+            <ng-multiselect-dropdown formControlName="programming"
+            [placeholder]="'Select Feild' "
+            [settings]="dropdownSettingsProgram"
+            [data]="dropdownListProgram"
+            [(ngModel)]="selectedItems"
+            (onSelect)="onItemSelect($event)"
+            (onSelectAll)="onSelectAll($event)">
+        </ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Database</label>
+    <ng-multiselect-dropdown formControlName="database"
+        [placeholder]="'Select Feild' "
+        [settings]="dropdownSettingsdb"
+        [data]="dropdownListdb"
+        [(ngModel)]="selectedItems"
+        (onSelect)="onItemSelect($event)"
+        (onSelectAll)="onSelectAll($event)">
+    </ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Finance</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+</div>    <!-- row closed -->
+
+<div class="row">
+  <div class="col-3">
+    <label>CloudTech</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Consulting</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Graphic Design</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Engineering Tech</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+</div>      <!-- row closed -->
+
+<div class="row">
+  <div class="col-3">
+    <label>sales/Marketing</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Testing</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Network Engg</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>AI/ML/Analytics</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+</div>   <!-- row closed -->
+<div class="row">
+  <div class="col-3">
+    <label>Digital Marketing</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>DigitalTransformation</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>DevOps</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Enterprize App</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+</div>       <!-- row closed -->
+<div class="row">
+  <div class="col-3">
+    <label>HR/Legal</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>CAD/GIS/RS</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>CAD/GIS/ RemoteSensing</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+</div>    <!-- row closed -->
+<hr>
+<h4>Pharma & Lifesciences</h4>
+<div class="row">
+  <div class="col-3">
+    <label>Research Scientist</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Legal/Patents</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>HR</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Marketing</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+  </div>
+</div>  <!-- row closed -->
+<div class="row">
+<div class="col-3">
+  <label>Purchase</label>
+  <ng-multiselect-dropdown formControlName="finances"
+  [placeholder]="'Select Feild' "
+  [settings]="dropdownSettings1"
+  [data]="dropdownList1"
+  [(ngModel)]="selectedItems"
+  (onSelect)="onItemSelect($event)"
+  (onSelectAll)="onSelectAll($event)">
+</ng-multiselect-dropdown>
+</div>
+</div>  <!-- row closed -->
+<hr>
+<h4>Film & Modelling</h4>
+<div class="row">
+  <div class="col-3">
+    <label>Modelling</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+  </ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Costume Designer</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+  </ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Choriographer</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+  </ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Direction</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+  </ng-multiselect-dropdown>
+  </div>
+</div>    <!-- row closed -->
+<div class="row">
+  <div class="col-3">
+    <label>Acting</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+  </ng-multiselect-dropdown>
+  </div>
+  <div class="col-3">
+    <label>Cameramen</label>
+    <ng-multiselect-dropdown formControlName="finances"
+    [placeholder]="'Select Feild' "
+    [settings]="dropdownSettings1"
+    [data]="dropdownList1"
+    [(ngModel)]="selectedItems"
+    (onSelect)="onItemSelect($event)"
+    (onSelectAll)="onSelectAll($event)">
+  </ng-multiselect-dropdown>
+  </div>
+</div>    <!-- row closed -->
+<div class="row mt-4">
+  <div class="col-2">
+    <a routerLink="/experience"> <button type="" class="btn btn-outline-primary mb-3" >Previous</button></a>
+ </div>
+
+<div class="col">
+<button type="submit" class="btn btn-success form-control mb-3" >Next</button>
+</div>
+</div>
+</form>
+</div>    <!-- containerclosed -->
